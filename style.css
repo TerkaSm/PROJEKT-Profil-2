@@ -1,0 +1,158 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+	BARVY
+	czechitas  #b92e81
+	pozadi     #bdc3c7
+	tmava      #31363b
+	delitka    #3f464d
+	portfolio  #e74c3c
+	facebook   #3b5998
+	twitter    #1da1f2
+
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+
+	V zadání není uvedeno, jak je celý rámeček s 
+	profilem široký - je to 250px (300).
+	Padding uvnitř obsahového boxu s textem je je 20px.
+
+*/
+
+
+body {
+	background-color: #bdc3c7;
+	margin: 0;
+}
+
+.hlavicka {
+	position: relative;
+	height: 200.13px;
+}
+
+.logo {
+	position: absolute;
+	bottom: -25px;
+	right: 30px;
+
+	background-color: #b71074;
+	color: #fff;
+	border-radius: 50%;
+	box-shadow: #000 2px 3px 20px;
+}
+
+.profil {
+	background-color: #31363b;
+	color: #bdc3c7;
+	width: 300px;
+	margin: 30px auto 200px auto;
+	box-shadow: rgb(64, 64, 64) 2px 3px 20px;
+
+}
+
+.foto {
+	width: 300px;
+}
+
+.obsah {
+	padding: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+}
+
+.jmeno {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 28px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+
+
+/* odkazy*/
+
+
+a {
+	text-decoration: none;
+	color: #bdc3c7;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	text-align: center;
+}
+
+
+/* odkaz Moje Portfolio*/
+
+.portfolio {
+	margin: 0;
+	padding: 0;
+	display: block;
+	border-top: 1px solid #3f464d;
+	border-bottom: 1px solid #3f464d;
+	text-align: center;
+}
+
+.portfolio a {
+	display: block;
+}
+
+.portfolio a:hover {
+	background-color: #e74c3c;
+}
+
+
+
+/* odkazy Twitter a Facebook*/
+
+.odkazy {
+	margin: 0;
+	padding: 0;
+}
+
+.odkazy li {
+	display: inline-block;
+	text-align: center;
+}
+
+.odkazy a {
+	padding: 12px 30px;
+}
+
+
+
+.facebook {
+	display: inline-block;
+	border-right: 1px solid #3f464d;
+}
+
+.facebook a {
+	display: inline-block;
+}
+
+.facebook a:hover {
+	background-color: #3b5998;
+}
+
+
+
+.twitter {
+	display: inline-block;
+}
+
+.twitter a {
+	display: inline-block;
+	padding: 12px 34px;
+}
+
+.twitter a:hover {
+	background-color: #1da1f2;
+}
+
+/*Dotazy: 
+1) Výška .hlavička - proč se sama nastavila na 205px, místo na 200px jako je obrázek?
+2) Proč je mezera mezi rámečkem a tlačítkem twiter? Je to vidět při hover a v paddingu
+*/
